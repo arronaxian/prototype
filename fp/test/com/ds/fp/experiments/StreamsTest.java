@@ -14,10 +14,10 @@ public class StreamsTest {
         List<Integer> results = Arrays.asList( 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 );
         StreamExperiments fibby = new StreamExperiments();
 
-        final List<Integer> fibResults = new ArrayList<>();
-        fibby.fibonacciStream.limit(10).forEach(fib -> fibResults.add(fib));
+        final List<Integer> values = new ArrayList<>();
+        fibby.fibonacciStream.limit(10).forEach(fib -> values.add(fib));
 
-        assertEquals(results, fibResults);
+        assertEquals(results, values);
     }
 
     @Test
